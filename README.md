@@ -90,14 +90,38 @@ exit
 
 ### Environment for Training (Conda Environment)
 
+**Prerequisites:**
+- CUDA Toolkit 12.4 or higher
+- NVIDIA GPU with compute capability 8.0+ (Ampere or newer recommended)
+- At least 40GB GPU memory for training
+
 ```bash
+# Create conda environment
 conda create -n toolorchestra python=3.12 -y
 conda activate toolorchestra
+
+# Install PyTorch with CUDA support
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
+
+# Install requirements
 pip install -r requirements.txt
+
+# Install flash-attention (requires CUDA toolkit and can take 10-20 minutes)
+# Ensure CUDA_HOME is set: export CUDA_HOME=/usr/local/cuda
 pip install flash-attn --no-build-isolation
+
+# Install flashinfer for optimized inference
 pip install flashinfer-python -i https://flashinfer.ai/whl/cu124/torch2.6/
+
+# Install the training rollout package
 pip install -e training/rollout
 ```
+
+**Troubleshooting CUDA Extensions:**
+- If `flash-attn` build fails, ensure you have the full CUDA toolkit (not just the driver)
+- Set `CUDA_HOME` environment variable to your CUDA installation path
+- For Ubuntu: `sudo apt-get install nvidia-cuda-toolkit`
+- For more details, see Issue #7
 
 ### Environment for Retrieval
 
