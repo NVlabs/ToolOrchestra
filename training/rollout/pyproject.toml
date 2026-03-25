@@ -29,7 +29,7 @@ dependencies = [
     "psutil>=7.0.0",
     "loguru>=0.7.3",
     "docstring-parser>=0.16",
-    "litellm>=1.65.0",
+    "litellm==1.82.6",  # pin: 1.82.7/1.82.8 compromised (supply-chain attack 2026-03-24); hash=sha256:164a3ef3e19f309e3cabc199bef3d2045212712fefdfa25fc7f75884a5b5b205
     "tenacity>=9.0.0",
     "matplotlib>=3.10.1",
     "seaborn>=0.13.2",

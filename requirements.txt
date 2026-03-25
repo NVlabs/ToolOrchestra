@@ -167,7 +167,7 @@ liger_kernel==0.5.8
 # lightning-thunder==0.2.0.dev0  # Version not available, use: pip install lightning-thunder
 lightning-utilities==0.11.6
 lintrunner==0.12.5
-litellm==1.76.0
+litellm==1.82.6 --hash=sha256:164a3ef3e19f309e3cabc199bef3d2045212712fefdfa25fc7f75884a5b5b205
 llguidance==0.7.19
 llvmlite==0.44.0
 lm-format-enforcer==0.10.11
