@@ -1,123 +1,52 @@
-# Contributing Guide
+# Contributing to ToolOrchestra
 
-Thank you for your interest in the project! We welcome all forms of contributions, including but not limited to:
+Thank you for your interest in contributing to ToolOrchestra! This document provides guidelines and information for contributors.
 
-- Bug reports
-- Feature suggestions
-- Documentation improvements
-- Code fixes
-- New features
-
-## Development Process
+## Getting Started
 
 1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+2. Clone your fork: `git clone https://github.com/YOUR_USERNAME/ToolOrchestra.git`
+3. Create a new branch: `git checkout -b feature/your-feature-name`
+4. Make your changes
+5. Submit a pull request
 
-## Developer Certificate of Origin
+## Development Environment
 
-Version 1.1
+See the [README.md](README.md) for detailed setup instructions. Key requirements:
 
-Copyright (C) 2004, 2006 The Linux Foundation and its contributors.
-
-Everyone is permitted to copy and distribute verbatim copies of this
-license document, but changing it is not allowed.
-
-### Developer's Certificate of Origin 1.1
-
-By making a contribution to this project, I certify that:
-
-(a) The contribution was created in whole or in part by me and I
-    have the right to submit it under the open source license
-    indicated in the file; or
-
-(b) The contribution is based upon previous work that, to the best
-    of my knowledge, is covered under an appropriate open source
-    license and I have the right under that license to submit that
-    work with modifications, whether created in whole or in part
-    by me, under the same open source license (unless I am
-    permitted to submit under a different license), as indicated
-    in the file; or
-
-(c) The contribution was provided directly to me by some other
-    person who certified (a), (b) or (c) and I have not modified
-    it.
-
-(d) I understand and agree that this project and the contribution
-    are public and that a record of the contribution (including all
-    personal information I submit with it, including my sign-off) is
-    maintained indefinitely and may be redistributed consistent with
-    this project or the open source license(s) involved.
+- Python 3.12
+- CUDA 12.4+
+- NVIDIA GPU (Ampere or newer recommended)
 
 ## Code Style
 
-Please ensure your code follows the project's code style guidelines. We use the following tools to maintain code quality:
+- Follow PEP 8 for Python code
+- Use type hints where appropriate
+- Add docstrings for public functions and classes
+- Avoid bare `except:` clauses - use specific exception types
 
-- Code formatting tools
-- Code linting tools
-- Unit tests
+## Testing
 
-## Submitting Pull Requests
+Before submitting a PR:
+- Test your changes locally
+- Ensure existing functionality still works
+- Add tests for new features if applicable
 
-Before submitting a Pull Request, please ensure:
+## Pull Request Process
 
-1. Your code passes all tests
-2. You have updated relevant documentation
-3. Your commit messages are clear and descriptive
-4. Your code follows the project's code style guidelines
+1. Update the README.md with details of changes if applicable
+2. Ensure your PR description clearly describes the problem and solution
+3. Link any related issues using keywords (e.g., "Fixes #123")
+4. Wait for review from maintainers
 
+## Reporting Issues
 
-## Signing Your Work
+When reporting issues, please include:
+- A clear description of the problem
+- Steps to reproduce
+- Your environment details (OS, Python version, CUDA version)
+- Error messages or logs
 
-* We require that all contributors "sign-off" on their commits. This certifies that the contribution is your original work, or you have rights to submit it under the same license, or a compatible license.
+## License
 
-  * Any contribution which contains commits that are not Signed-Off will not be accepted.
-
-* To sign off on a commit you simply use the `--signoff` (or `-s`) option when committing your changes:
-  ```bash
-  $ git commit -s -m "Add cool feature."
-  ```
-  This will append the following to your commit message:
-  ```
-  Signed-off-by: Your Name <your@email.com>
-  ```
-
-* Full text of the DCO:
-
-  ```
-    Developer Certificate of Origin
-    Version 1.1
-    
-    Copyright (C) 2004, 2006 The Linux Foundation and its contributors.
-    1 Letterman Drive
-    Suite D4700
-    San Francisco, CA, 94129
-    
-    Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
-  ```
-
-  ```
-    Developer's Certificate of Origin 1.1
-    
-    By making a contribution to this project, I certify that:
-    
-    (a) The contribution was created in whole or in part by me and I have the right to submit it under the open source license indicated in the file; or
-    
-    (b) The contribution is based upon previous work that, to the best of my knowledge, is covered under an appropriate open source license and I have the right under that license to submit that work with modifications, whether created in whole or in part by me, under the same open source license (unless I am permitted to submit under a different license), as indicated in the file; or
-    
-    (c) The contribution was provided directly to me by some other person who certified (a), (b) or (c) and I have not modified it.
-    
-    (d) I understand and agree that this project and the contribution are public and that a record of the contribution (including all personal information I submit with it, including my sign-off) is maintained indefinitely and may be redistributed consistent with this project or the open source license(s) involved.
-  ```
-
-## Issue Reporting
-
-If you find any issues or have suggestions, please submit them through GitHub Issues. Before submitting an issue, please ensure:
-
-1. The issue hasn't been reported already
-2. You have provided sufficient information to reproduce the issue
-3. You have attempted to resolve the issue yourself
-
-Thank you for contributing! 
+By contributing, you agree that your contributions will be licensed under the Apache 2.0 License.
