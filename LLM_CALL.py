@@ -227,7 +227,7 @@ def get_openai_token(p_token_url, p_client_id, p_client_secret, p_scope, **kwarg
             key = json.load(f)
         if time.time()<key['expire_at']:
             return key["access_token"]
-    except:
+    except (FileNotFoundError, json.JSONDecodeError, KeyError):
         pass
     
     response = requests.post(
@@ -253,7 +253,7 @@ def get_claude_token():
             key = json.load(f)
         if time.time()<key['expire_at']:
             return key["access_token"]
-    except:
+    except (FileNotFoundError, json.JSONDecodeError, KeyError):
         pass
 
     client_id = os.getenv("CLIENT_ID")
