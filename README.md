@@ -1,4 +1,5 @@
 # ToolOrchestra: Elevating Intelligence via Efficient Model and Tool Orchestration
+[![DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/NVlabs/ToolOrchestra)
 
 <p align="center">
   <a href="https://arxiv.org/abs/2511.21689"><img src="https://img.shields.io/badge/ArXiv-Paper-brown" alt="Paper"></a>
